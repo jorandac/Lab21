@@ -7,6 +7,7 @@
 <title>Cupcakes and Coffee</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/solar/bootstrap.min.css" />
+<link rel="stylesheet" href="/styles.css" />
 </head>
 
 <body style="background-color:Pink;">
@@ -19,10 +20,31 @@
 
 <div>
 
+<table class="table">
+			<thead>
+	
+				<tr class="table-danger">
+					<th>Item</th><th>Description</th><th>Quantity</th><th>Price</th>
+				</tr>
+			</thead>
+			<tbody>
+				<c:forEach var="item" items="${item}">
+				<tr>
+					<td>${item.name}</td>
+					<td>${item.description}</td>
+					<td>${item.quantity}</td>
+					<td>${item.price}</td>
+				</tr>
+				</c:forEach>
+			</tbody>
+		</table>
+		
 
 <a class="btn btn-danger" href="/registration" role="button">Register With Us!</a>
 </div>
+
 <br>
+
 
 <div>
 
@@ -49,3 +71,6 @@
 
 
 </html>
+
+
+
