@@ -10,7 +10,7 @@ public class CoffeeShopLab19Controller {
 	
 	@RequestMapping("/")
 	public ModelAndView showHomePage() {
-		ModelAndView mav = new ModelAndView("index"); //Name of View We're Using
+		ModelAndView mav = new ModelAndView("index");  //Name of View We're Using
 	    return mav; 
 	
 	}
@@ -26,15 +26,20 @@ public class CoffeeShopLab19Controller {
 			@RequestParam("firstName") String firstName, 
 			@RequestParam("lastName") String lastName, 
 			@RequestParam("email") String email, 
-			@RequestParam("phoneNumber") String phoneNum, 
-			@RequestParam("password") String password) {
+			@RequestParam("gender") String gender, 
+			@RequestParam("phoneNum") String phoneNum, 
+			@RequestParam("password") String password)
+	      
+	{
 	
 	    ModelAndView mav = new ModelAndView("summary"); //Name of View We're Using  
 		mav.addObject("firstname", firstName);
 		mav.addObject("lastname", lastName);
 		mav.addObject("email", email);
+		mav.addObject("gender", gender);
 		mav.addObject("phone", phoneNum);
 		mav.addObject("password", password);
         return mav;  
 	}
+	
 }
