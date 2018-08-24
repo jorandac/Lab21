@@ -19,17 +19,17 @@
 <form class="/summary" action="summary" method="get">
 
    <fieldset class="form">
-   <legend>The basics</legend>
+   <legend>Let's Get to the Basics!</legend>
    
     <p>
-        First Name: <input name="firstName" required minlength="2"/>
+        First Name: <br> <input name="firstName" required minlength="2"/>
     </p>
     <p>
-        Last Name: <input name="lastName" required minlength="2"/>
+        Last Name:<br> <input name="lastName" required minlength="2"/>
     </p>
     
      <p>  
-     
+     Gender: <br>
     <input type="radio" name="gender" value="male" checked> Male<br>
     <input type="radio" name="gender" value="female"> Female<br>
     <input type="radio" name="gender" value="other"> Prefer Not to Answer
@@ -37,10 +37,10 @@
     </p>
     
     <p>
-        Email: <input type="email" name="email"/>
+        Email: <br> <input type="email" name="email"/>
     </p>
     <p>
-        Phone Number: <input name = "phoneNum" required pattern = "[0-9]{10}" minlength ="10" maxlength ="10"/>
+        Phone Number: <br><input name = "phoneNum" required pattern = "[0-9]{10}" minlength ="10" maxlength ="10"/>
     </p>
     <p>
     
@@ -50,7 +50,8 @@
    <legend>Authentication</legend>
     
     <p>
-        Password: <input type="password" name="password"/>
+        Please Create A Password: <br>
+         <input type="password" name="password"/>
     </p>
    
     <button type="submit" class="btn btn-danger"> Submit</button>    

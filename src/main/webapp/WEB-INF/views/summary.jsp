@@ -23,7 +23,7 @@
 
 
 <h1>Thank you for registering!</h1>
-	<p>Hello ${ firstname } ! You are now apart of the family, welcome!</p>
+	<p>Hello ${ firstName } ! You are now apart of the family, welcome!</p>
 	
 	
 	<a class="btn btn-danger" href="/registration" role="button">Go Back</a>

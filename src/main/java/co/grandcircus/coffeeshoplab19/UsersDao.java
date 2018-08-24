@@ -1,4 +1,4 @@
-package coffeeShopDao;
+package co.grandcircus.coffeeshoplab19;
 
 import java.util.List;
 
@@ -17,9 +17,9 @@ public class UsersDao {
 		private JdbcTemplate jdbcTemplate;
 
 		
-		public List<Item> findAll(){
+		public List<User> findAll(){
 			String sql = "SELECT * FROM items";
-			return jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Item.class));
+			return jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(User.class));
 		}
 		
 		public void create(User user) {
